@@ -25,15 +25,17 @@ A full-stack application to search **Bangalore pincodes** and find their corresp
 ```text
 bangalore-pincode-explorer/
 │
-├── client/
+├── frontend/
 │   └── src/
 │       ├── components/
 │       │   ├── SearchBar.jsx
 │       │   └── PincodeCard.jsx
 │       ├── App.jsx
 │       └── App.css
+│       └── index.css
+│       └── main.jsx
 │
-├── server/
+├── backend/
 │   └── src/
 │       ├── controllers/
 │       │   └── pincodeController.js
@@ -41,7 +43,7 @@ bangalore-pincode-explorer/
 │       │   └── Pincode.js
 │       ├── routes/
 │       │   └── pincodeRoutes.js
-│       └── server.js
+│       └── index.js
 │
 ├── README.md
 └── .gitignore
@@ -115,15 +117,18 @@ npm run dev
 
 ### Home / Search
 
-<!-- Add screenshot here -->
+<img width="1917" height="1011" alt="Screenshot 2026-08-13 162307" src="https://github.com/user-attachments/assets/b33d7505-2c7c-46a3-a16e-036ce0c7e33c" />
+
 
 ### Search Results
 
-<!-- Add screenshot here -->
+<img width="1917" height="1017" alt="image" src="https://github.com/user-attachments/assets/4458633e-6d4f-4bc3-b364-ce7eafac2e1d" />
+
 
 ### Error Handling
 
-<!-- Add screenshot here -->
+<img width="1917" height="1015" alt="image" src="https://github.com/user-attachments/assets/4aae2807-4720-43ea-8786-ebd13f6c5ae1" />
+
 
 ## 👩‍💻 Author
 
