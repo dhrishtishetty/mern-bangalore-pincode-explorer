@@ -1,0 +1,339 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background: #f5f7fb;
+  color: #172033;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 70px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* HERO */
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 18px;
+
+  border-radius: 14px;
+
+  background: #172033;
+
+  font-size: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #697386;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: 44px;
+  line-height: 1.1;
+}
+
+.hero h1 span {
+  color: #5267e8;
+}
+
+.subtitle {
+  max-width: 550px;
+
+  margin: 16px auto 0;
+
+  color: #697386;
+
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* SEARCH */
+
+.search-form {
+  display: flex;
+  gap: 10px;
+
+  padding: 8px;
+
+  background: white;
+
+  border: 1px solid #e5e8ef;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 10px 35px rgba(23, 32, 51, 0.08);
+}
+
+.search-form input {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 15px;
+
+  border: none;
+  outline: none;
+
+  color: #172033;
+}
+
+.search-form input::placeholder {
+  color: #9aa3b2;
+}
+
+.search-form button {
+  padding: 0 25px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #172033;
+  color: white;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.search-form button:hover {
+  transform: translateY(-1px);
+}
+
+.search-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ERROR */
+
+.error-message {
+  margin-top: 20px;
+
+  padding: 15px 18px;
+
+  border-radius: 10px;
+
+  background: #fff0f0;
+
+  color: #c0392b;
+
+  border: 1px solid #ffd4d4;
+}
+
+/* RESULTS */
+
+.results {
+  margin-top: 45px;
+}
+
+.results-heading {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: end;
+
+  margin-bottom: 18px;
+}
+
+.results-heading p {
+  margin: 0 0 5px;
+
+  font-size: 11px;
+
+  letter-spacing: 1.5px;
+
+  font-weight: 700;
+
+  color: #697386;
+}
+
+.results-heading h2 {
+  margin: 0;
+
+  font-size: 24px;
+}
+
+.results-heading > span {
+  color: #697386;
+
+  font-size: 14px;
+}
+
+.cards {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.pincode-card {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 22px;
+
+  background: white;
+
+  border: 1px solid #e5e8ef;
+
+  border-radius: 14px;
+
+  transition: 0.2s;
+}
+
+.pincode-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 25px rgba(23, 32, 51, 0.07);
+}
+
+.pincode-card h3 {
+  margin: 0 0 7px;
+
+  font-size: 18px;
+}
+
+.pincode-card p {
+  margin: 0;
+
+  color: #697386;
+
+  font-size: 14px;
+}
+
+.pincode-badge {
+  padding: 8px 12px;
+
+  border-radius: 8px;
+
+  background: #eef0ff;
+
+  color: #5267e8;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+/* EMPTY */
+
+.empty-state {
+  margin-top: 55px;
+
+  text-align: center;
+
+  padding: 45px 20px;
+
+  border: 1px dashed #d9deea;
+
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.empty-state > div {
+  font-size: 35px;
+
+  margin-bottom: 15px;
+}
+
+.empty-state h2 {
+  margin: 0 0 8px;
+
+  font-size: 20px;
+}
+
+.empty-state p {
+  margin: 0;
+
+  color: #697386;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .app {
+    padding: 45px 16px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-form button {
+    padding: 14px;
+  }
+
+  .results-heading {
+    align-items: start;
+
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+  .pincode-card {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+}
